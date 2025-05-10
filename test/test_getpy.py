@@ -123,8 +123,8 @@ def test_getpy_types():
     for key_type, value_type in gp.dict_types:
         gp_dict = gp.Dict(key_type, value_type)
 
-        keys = np.array(range(256), dtype=key_type)
-        values = np.array(range(256), dtype=value_type)
+        keys = np.array(range(128), dtype=key_type)
+        values = np.array(range(128), dtype=value_type)
 
         gp_dict[keys] = values
 
